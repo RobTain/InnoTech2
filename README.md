@@ -1,2 +1,1 @@
-# InnoTech2
-Inno Tech 2
+# Innovation Technology 2
