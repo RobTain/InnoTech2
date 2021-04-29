@@ -8,8 +8,7 @@ function zeigeDaten(daten) {
     //geschieht hier für jede Zeile von daten.
     p.enter().append("p")
         .text(function (daten) {
-            console.log(JSON.stringify(daten.werte));
-            return "Uhrzeit: " + daten.datum + " Wert:" + JSON.stringify(daten.werte);
+            return "Uhrzeit: " + daten.datum + " Wert:" + JSON.stringify(daten.werte, null, 2);
         });
     //.exit().remove(): Daten löschen, falls es mehr Elemente im HTML als Daten gibt.
     p.exit().remove();
