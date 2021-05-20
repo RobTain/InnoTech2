@@ -2,3 +2,10 @@ body {
   background-color: #717e87;
   font-family: 'Roboto';
 }
+
+nav {
+	background-color: #314151;
+	color: white;
+  font-family: 'Roboto';
+	
+}
