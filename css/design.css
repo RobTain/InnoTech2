@@ -1,11 +1,38 @@
-html body {
+body {
     background-color: #717e87;
-    font-family: 'Roboto';
+    font-family: 'Roboto';    
+    margin: 0;
 }
 
-nav {
-	background-color: #314151;
-	color: white;
-	font-size: larger;
-	width: 20%;
+.container {
+    display: flex; 
+}
+
+.sidenav {
+	padding-top: 2%;
+	height: 100vh;
+    width: 20%;
+    float: left;
+    position: relative;
+    background-color:  #314151;
+    color: white;
+    font-size: 24px;
+
+}
+
+.content {
+	height: 100vh;
+	width: calc(100% - 200px);
+    float: right;
+    position: relative;
+   
+}
+
+li {
+	padding: 2%;
+	margin-left: 2%;
+}
+
+a {
+	text-decoration: none;
 }
