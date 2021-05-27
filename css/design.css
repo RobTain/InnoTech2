@@ -28,6 +28,10 @@ body {
    
 }
 
+#menu-icon {
+	margin-left: 5%;
+}
+
 li {
 	padding: 2%;
 	margin-left: 2%;
