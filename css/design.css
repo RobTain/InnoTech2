@@ -40,3 +40,24 @@ li {
 a {
 	text-decoration: none;
 }
+
+#header{
+	color: white;
+	margin-left: 5%;
+	padding-top: 2%;
+	font-family: 'Roboto';
+	font-size: 250%;
+}
+
+div.column {
+	margin-left: 5%;
+	margin-top: 2%;
+  	background-color: #314151;
+  	width: 20%;
+  	height: 90%;
+  	color: white;
+  	overflow: hidden;
+  	font-family: 'Roboto';
+  	font-size: large;
+  	padding: 2%;
+}
