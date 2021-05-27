@@ -49,12 +49,19 @@ a {
 	font-size: 250%;
 }
 
+#headerColumn {
+	font-family: 'Roboto';
+	font-size: xx-large;
+	text-align: center;
+}
+
+
 div.column {
 	margin-left: 5%;
 	margin-top: 2%;
   	background-color: #314151;
   	width: 20%;
-  	height: 90%;
+  	height: 85%;
   	color: white;
   	overflow: hidden;
   	font-family: 'Roboto';
