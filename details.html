@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Details</title>
+        <meta charset="utf-8" />
+        <!-- einbinden von d3js -->
+        <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+        <script src="js/readJSON.js"></script>
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/design.css" media="screen" />
+       	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body onload="aktualisiere()">
+    <div class="container">
+    	<div class="sidenav">
+    		<nav>
+				<ul class="fa-ul">
+					<li><span id="menu-icon" class="fa-li"><i class="fa fa-bars fa-3x"></i></span><a href="#"></a></li>
+				</br></br></br>
+		<!--<li aria-current="page"><a href="#">aktuelle Seite</a>
+		</li> -->
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Übersicht</a></li>
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Komponente 1</a></li>
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Komponente 2</a></li>
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Komponente 3</a></li>
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Komponente 4</a></li>
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Komponente 5</a></li>
+					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="#">Komponente 6</a></li>
+					</li>
+				</ul>
+			</nav>
+    	</div>
+    	<div class="content">
+
+    		 <header id="header">
+    			Übersicht der Komponenten
+  			</header>
+
+
+    		
+			<div class="columnDetail">
+				<div id="headerColumn">Hochregallager</div>
+				<br/><br/>
+				<img src="pictures/automatisiertes_hochregallager_skaliert.png" alt="Foto Hochregallager" class="centerPicture">
+				<br/><br/><br/><br/>
+                <p id="singleJSON"></p>
+
+    		</div>			
+
+		</div>
+ 
+     
+    	<!-- Anzeige Plain JSON -->
+       <!-- <div id="content"></div> -->
+    </body>
+</html>

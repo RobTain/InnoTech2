@@ -68,3 +68,23 @@ div.column {
   	font-size: large;
   	padding: 2%;
 }
+
+div.columnDetail {
+  margin-left: 5%;
+  margin-top: 2%;
+  background-color: #314151;
+  width: 90%;
+  height: 85%;
+  color: white;
+  overflow: hidden;
+  font-family: 'Roboto';
+  font-size: large;
+  padding: 2%;
+}
+
+.centerPicture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
