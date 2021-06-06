@@ -16,10 +16,11 @@ function zeigeDaten(daten, parameter) {
     const test = JSON.parse(json);
     const values = test.split(',');
 
-
-    let value = 0;
     switch(parameter) {
         case "Hochregallager":
+
+
+        /*
         "Referenztaster horizontal":" true",
         "Lichtschranke innen":" true",
         "Lichtschranke aussen":" true",
@@ -32,9 +33,25 @@ function zeigeDaten(daten, parameter) {
         "V-vertikal":"0",
         // Motor Ausleger vorwärts fehlt
 
-         console.log(values[0].replace("{", "").replace("}", ""));
+
+        value last = 43
+        */
+
+        console.log(values[21]);
+        console.log(values[22]);
+        console.log(values[23]);
+        console.log(values[24]);
+        console.log(values[25]);
+        console.log(values[26]);
+        console.log(values[32]);
+        console.log(values[0]);
+        console.log(values[1]);
+
+
         break;
         case "Brennofen":
+
+                /*
         "B-Referenzschalter Drehkranz (Pos. Sauger)":" false",
         "B-Referenzschalter Drehkranz (Pos. Foerderband)":" false",
         "B-Lichtschranke Ende Foerderband":" true",
@@ -53,10 +70,32 @@ function zeigeDaten(daten, parameter) {
         "B-Motor Sauger zum Ofen":" false",
         "B-Motor Sauger zum Drehkranz":" false",
         "B-Leuchte Ofen":" false",
+        */
+
+        console.log(values[5]);
+        console.log(values[6]);
+        console.log(values[7]);
+        console.log(values[8]);
+        console.log(values[9]);
+        console.log(values[10]);
+        console.log(values[11]);
+        console.log(values[12]);
+        console.log(values[13]);
+        console.log(values[14]);
+        console.log(values[30]);
+        console.log(values[31]);
+        console.log(values[32]);
+        console.log(values[33]);
+        console.log(values[34]);
+        console.log(values[35]);
+        console.log(values[37]);
+        console.log(values[38]);
+
 
         break;
         case "Sortierstrecke":
 
+        /*
         "S-Lichtschranke Eingang":" true",
         "S-Lichtschranke nach Farbsensor":" true",
         // Farbsensor missing
@@ -64,18 +103,34 @@ function zeigeDaten(daten, parameter) {
         "S-Lichtschranke rot":" true",
         "S-Lichtschranke blau":" true",
         "S-Motor Foerderband":" false",
+        */
+        console.log(values[14]);
+        console.log(values[25]);
+        console.log(values[16]);
+        console.log(values[17]);
+        console.log(values[18]);
+        console.log(values[39]);
+
         break;
         case "Sauggreifer":
 
+                /*
         "V-Referenzschalter vertikal":" true",
         "V-Referenzschalter horizontal":" true",
         "V-Referenzschalter drehen":" true",
         "V-vertikal":"0",
         "V-drehen":"0",
         "V-horizontal":"0",
+        */
+
+        console.log(values[27]);
+        console.log(values[28]);
+        console.log(values[29]);
+        console.log(values[2]);
+        console.log(values[3]);
+        console.log(values[4]);
+
         break;
-        default:
-        value = 0;
     }
 
     
