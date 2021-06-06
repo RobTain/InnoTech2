@@ -153,44 +153,8 @@ function zeigeDaten(daten, parameter) {
         break;
     }
 
-    
-
-
     // JSON ausgeben
     let t = d3.select("#values").text(output);
-
-    
-
-	
-/*
-    //Rückgabe der d3.selectAll - Methode in variable p speichern.(Alle Kindelemente von content, die p- Elemente sind.) Am Anfang gibt es noch keine.
-    let p = d3.select("#demo").selectAll("p").data(daten);
-
-    //.enter().append(): Daten hinzufuegen falls es mehr Daten als Elemente im HTML gibt.
-    //geschieht hier für jede Zeile von daten.
-    p.enter().append("p")
-        .text(function (daten) {
-            // JSON als Variable speichern
-            const myJSON = JSON.stringify(daten.werte, null, 10);
-//            var res = myJSON.split(",");
-//            console.log(res[0]);
-    
-            return daten;
-        });
-
-    //.exit().remove(): Daten löschen, falls es mehr Elemente im HTML als Daten gibt.
-    p.exit().remove();
-
-*/
-/*
-    // Version 2, set single JSON rein 
-    const myJSON = JSON.stringify(daten.werte, null, "");
-    var firstEntry = daten[0];
-
-    const json = JSON.stringify(JSON.stringify(firstEntry.werte, null, ""));
-    let t = d3.select("#singleJSON").text(json);
-    */
-
 
 }
 
@@ -198,9 +162,8 @@ function empfangeDaten(datenEmpfangen,error) {
     // Parameter auslesen und mitschicken
 
 
-const queryString = window.location.search;
+    const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-
 
     let parameter = urlParams.get('parameter').replace("?parameter=", "");
     if (error) {
