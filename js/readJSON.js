@@ -16,6 +16,10 @@ function zeigeDaten(daten, parameter) {
     const test = JSON.parse(json);
     const values = test.split(',');
 
+    let output;
+
+    console.log(parameter);
+
     switch(parameter) {
         case "Hochregallager":
 
@@ -33,10 +37,6 @@ function zeigeDaten(daten, parameter) {
         "V-vertikal":"0",
         // Motor Ausleger vorwärts fehlt
 
-
-        value last = 43
-        */
-
         console.log(values[21]);
         console.log(values[22]);
         console.log(values[23]);
@@ -46,6 +46,13 @@ function zeigeDaten(daten, parameter) {
         console.log(values[32]);
         console.log(values[0]);
         console.log(values[1]);
+
+        value last = 43
+        */
+        output = values[21] + "," + values[22] + "," + values[23] + "," + values[24] 
+        + "," + values[25] + "," + values[26] + "," + values[32] + "," + values[0].replace("{","")
+        + "," + values[1];
+
 
 
         break;
@@ -70,7 +77,6 @@ function zeigeDaten(daten, parameter) {
         "B-Motor Sauger zum Ofen":" false",
         "B-Motor Sauger zum Drehkranz":" false",
         "B-Leuchte Ofen":" false",
-        */
 
         console.log(values[5]);
         console.log(values[6]);
@@ -91,6 +97,14 @@ function zeigeDaten(daten, parameter) {
         console.log(values[37]);
         console.log(values[38]);
 
+        */
+
+        output = values[5] + "," + values[6] + "," + values[7] + "," + values[8] 
+        + "," + values[9] + "," + values[10] + "," + values[11] + "," + values[12]
+        + "," + values[13] + "," + values[14] + "," + values[30] + "," + values[31]
+        + "," + values[32] + "," + values[33] + "," + values[34] + "," + values[35]
+        + "," + values[37] + "," + values[38];
+
 
         break;
         case "Sortierstrecke":
@@ -103,13 +117,16 @@ function zeigeDaten(daten, parameter) {
         "S-Lichtschranke rot":" true",
         "S-Lichtschranke blau":" true",
         "S-Motor Foerderband":" false",
-        */
+        
         console.log(values[14]);
         console.log(values[25]);
         console.log(values[16]);
         console.log(values[17]);
         console.log(values[18]);
         console.log(values[39]);
+        */
+        output = values[14] + "," + values[25] + "," + values[16] + "," + values[17] 
+        + "," + values[18] + "," + values[39];
 
         break;
         case "Sauggreifer":
@@ -121,7 +138,6 @@ function zeigeDaten(daten, parameter) {
         "V-vertikal":"0",
         "V-drehen":"0",
         "V-horizontal":"0",
-        */
 
         console.log(values[27]);
         console.log(values[28]);
@@ -129,6 +145,10 @@ function zeigeDaten(daten, parameter) {
         console.log(values[2]);
         console.log(values[3]);
         console.log(values[4]);
+        */
+
+        output = values[27] + "," + values[28] + "," + values[29] + "," + values[2] 
+        + "," + values[3] + "," + values[4];
 
         break;
     }
@@ -137,7 +157,7 @@ function zeigeDaten(daten, parameter) {
 
 
     // JSON ausgeben
-    let t = d3.select("#values").text(json);
+    let t = d3.select("#values").text(output);
 
     
 
