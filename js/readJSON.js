@@ -196,7 +196,13 @@ function zeigeDaten(daten, parameter) {
 
 function empfangeDaten(datenEmpfangen,error) {
     // Parameter auslesen und mitschicken
-    let parameter = "Hochregallager";
+
+
+const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+
+    let parameter = urlParams.get('parameter').replace("?parameter=", "");
     if (error) {
         console.log(error);
     } else {
