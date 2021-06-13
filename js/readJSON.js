@@ -30,6 +30,7 @@ function zeigeDaten(daten, parameter) {
     colourWhite = colourWhite[1].replace("\"", "").split(" ")[1].replace("\"", "").replace("}","");
     
 
+
     // Setzen der Farbe
     let colour = document.querySelector("#trafficLight");
     if (colourRed == "true") {
@@ -179,7 +180,6 @@ function zeigeDaten(daten, parameter) {
 
     // JSON ausgeben
     let t = d3.select("#values").text(output);
-
 }
 
 function empfangeDaten(datenEmpfangen,error) {

@@ -33,14 +33,15 @@
 				</ul>
 				<br/>
 				<center>
-				<form >
-					<input type="hidden" name="errorValue" value="1" /> 
-					<button type="button" id="error1">Fehler 1</button>
+				<!-- TODO find komponente with error und referenziere direkt drauf -->
+				<form action="index.html" method="get">
+					<input id="errorValue" type="hidden" name="errorValue" value="1" /> 
+					<button type="submit" id="error1">Fehler 1</button>
 
 				</form>
-				<form>
-					 <input type="hidden" name="errorValue" value="2" /> 
-					<button type="button" id="error2">Fehler 2</button>
+				<form action="index.html" method="get">
+					 <input id="errorValue" type="hidden" name="errorValue" value="2" /> 
+					<button type="submit" id="error2">Fehler 2</button>
 				</form>
 			</center>
 			</nav>
