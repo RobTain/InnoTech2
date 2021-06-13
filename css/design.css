@@ -82,6 +82,9 @@ div.columnDetail {
   padding: 2%;
 }
 
+.box { float: left; width: 47%; margin-right: 2%; box-sizing: border-box; }
+.box:last-child { margin-right: 0; }
+
 .centerPicture {
   display: block;
   margin-left: auto;
@@ -113,3 +116,4 @@ div.columnDetail {
   background-color: #717e87;
   color: white;
 }
+
