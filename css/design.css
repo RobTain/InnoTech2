@@ -88,3 +88,18 @@ div.columnDetail {
   margin-right: auto;
   width: 20%;
 }
+
+#HeaderNav {
+  font-family: 'Roboto';
+  margin-bottom: 10%;
+   text-align: center;
+}
+
+#trafficLight {
+    background-color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}

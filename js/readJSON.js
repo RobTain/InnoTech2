@@ -1,6 +1,7 @@
 
 function zeigeDaten(daten, parameter) {
 
+    // Überschrift setzen
     let heading = d3.select("#headerColumn").text(parameter);
 
     // JSON komplett reinladen 
@@ -18,7 +19,30 @@ function zeigeDaten(daten, parameter) {
 
     let output;
 
-    console.log(parameter);
+    // Ampelfarbe parsen
+    let colourRed = values[40].split(":");
+    colourRed = colourRed[1].replace("\"", "").split(" ")[1].replace("\"", "");
+    let colourOrange = values[41].split(":");
+    colourOrange = colourOrange[1].replace("\"", "").split(" ")[1].replace("\"", "");
+    let colourGreen = values[42].split(":");
+    colourGreen = colourGreen[1].replace("\"", "").split(" ")[1].replace("\"", "");
+    let colourWhite = values[43].split(":");
+    colourWhite = colourWhite[1].replace("\"", "").split(" ")[1].replace("\"", "").replace("}","");
+    
+
+    // Setzen der Farbe
+    let colour = document.querySelector("#trafficLight");
+    if (colourRed == "true") {
+        colour.style.backgroundColor = "Red";
+    } else if (colourOrange == "true") {
+        colour.style.backgroundColor = "Yellow";
+    } else if (colourGreen == "true") {
+        colour.style.backgroundColor = "Green";
+    } else {
+        colour.style.backgroundColor = "White";
+    }
+
+   
 
     switch(parameter) {
         case "Hochregallager":
