@@ -8,6 +8,7 @@ function zeigeDaten(daten, parameter) {
     const myJSON = JSON.stringify(daten.werte, null, "");
 
     // erstes JSON selektieren
+	// parameter auswerten
     var firstEntry = daten[0];
 
     // als JSON nochmal reinladen
@@ -111,7 +112,7 @@ function empfangeDaten(datenEmpfangen,error) {
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-
+	// parameter time adden und auswerten 
     let parameter = urlParams.get('parameter').replace("?parameter=", "");
     if (error) {
         console.log(error);
