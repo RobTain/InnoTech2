@@ -122,6 +122,13 @@ function empfangeDaten(datenEmpfangen,error) {
 }
 
 function aktualisiere() {
+    /*
+     Leider muss ich an dieser Stelle erwähnen, dass mein Informatik Partner zwar namentlich an
+     diesem Projekt beteiligt war, jedoch zu keiner Zeit praktisch. Ich liebe Gruppenarbeiten.
+     Mal schauen, ob er diesen Kommentar findet, wenn ja, würde er ihn wahrscheinlich löschen, aber
+     da zwei Wochen vor der Abgabe noch nichts brauchbares commited wurde, bezweifle ich das stark.
+    */
+
     //d3.json nutzen, um Link aufzurufen und das Ergebnis an die empfangeDaten- Methode zu übergeben.
     d3.json("http://it2wi1.if-lab.de/rest/ft_ablauf").then(function (data, error) {
         empfangeDaten(data, error)
