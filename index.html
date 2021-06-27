@@ -17,9 +17,10 @@
     <div class="container">
     	<div class="sidenav">
     		<nav>
-				<ul class="fa-ul">
-					<li><span id="menu-icon" class="fa-li"><i class="fa fa-bars fa-3x"></i></span><a href="#"></a></li>
-				</br></br></br>
+    			<div id="HeaderNav">Systemstatus:</div>
+    			<center><div id="trafficLight"></div></center>
+    			<ul class="fa-ul">
+				</br>
 		<!--<li aria-current="page"><a href="#">aktuelle Seite</a>
 		</li> -->
 					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="index.html">Übersicht</a></li>
@@ -29,6 +30,19 @@
 					<li><span class="fa-li"><i class="fa fa-caret-right"></i></span><a href="details.html?parameter=Sauggreifer">Sauggreifer</a></li>
 					</li>
 				</ul>
+				<br/>
+				<center>
+				<!-- TODO find komponente with error und referenziere direkt drauf -->
+				<form action="index.html" method="get">
+					<input id="errorValue" type="hidden" name="errorValue" value="1" /> 
+					<button type="submit" id="error1">Fehler 1</button>
+
+				</form>
+				<form action="index.html" method="get">
+					 <input id="errorValue" type="hidden" name="errorValue" value="2" /> 
+					<button type="submit" id="error2">Fehler 2</button>
+				</form>
+			</center>
 			</nav>
     	</div>
     	<div class="content">
