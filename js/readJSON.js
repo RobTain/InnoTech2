@@ -1,8 +1,10 @@
 
 function zeigeDaten(daten, parameter) {
 
-    // Überschrift setzen
-    d3.select("#headerColumn").text(parameter);
+    if (parameter != "all") {
+        // Überschrift setzen
+        d3.select("#headerColumn").text(parameter);
+    }
 
     // JSON komplett reinladen 
     const myJSON = JSON.stringify(daten.werte, null, "");
@@ -44,11 +46,8 @@ function zeigeDaten(daten, parameter) {
         colour.style.backgroundColor = "White";
     }
 
-   
-
     switch(parameter) {
         case "Hochregallager":
-
         d3.select("#value1").text(values[21]);
         d3.select("#value2").text(values[22]);
         d3.select("#value3").text(values[23]);
@@ -58,10 +57,8 @@ function zeigeDaten(daten, parameter) {
         d3.select("#value7").text(values[32]);
         d3.select("#value8").text(values[0].replace("{",""));
         d3.select("#value9").text(values[1]);
-
         break;
         case "Brennofen":
-
         d3.select("#value1").text(values[5]);
         d3.select("#value2").text(values[6]);
         d3.select("#value3").text(values[7]);
@@ -80,29 +77,66 @@ function zeigeDaten(daten, parameter) {
         d3.select("#value16").text(values[35]);
         d3.select("#value17").text(values[37]);
         d3.select("#value18").text(values[38]);
-
-
         break;
         case "Sortierstrecke":
-
         d3.select("#value1").text(values[14]);
         d3.select("#value2").text(values[25]);
         d3.select("#value3").text(values[16]);
         d3.select("#value4").text(values[17]);
         d3.select("#value5").text(values[18]);
         d3.select("#value6").text(values[39]);
-
         break;
         case "Sauggreifer":
-
         d3.select("#value1").text(values[27]);
         d3.select("#value2").text(values[28]);
         d3.select("#value3").text(values[29]);
         d3.select("#value4").text(values[2]);
         d3.select("#value5").text(values[3]);
         d3.select("#value6").text(values[4]);
-
         break;
+        case"all":
+        d3.select("#inputHochregal1").text(values[21]);
+        d3.select("#inputHochregal2").text(values[22]);
+        d3.select("#inputHochregal3").text(values[23]);
+        d3.select("#inputHochregal4").text(values[24]);
+        d3.select("#inputHochregal5").text(values[25]);
+        d3.select("#inputHochregal6").text(values[26]);
+        d3.select("#inputHochregal7").text(values[32]);
+        d3.select("#inputHochregal8").text(values[0].replace("{",""));
+        d3.select("#inputHochregal9").text(values[1]);
+
+        d3.select("#inputBrennofen1").text(values[5]);
+        d3.select("#inputBrennofen2").text(values[6]);
+        d3.select("#inputBrennofen3").text(values[7]);
+        d3.select("#inputBrennofen4").text(values[8]);
+        d3.select("#inputBrennofen5").text(values[9]);
+        d3.select("#inputBrennofen6").text(values[10]);
+        d3.select("#inputBrennofen7").text(values[11]);
+        d3.select("#inputBrennofen8").text(values[12]);
+        d3.select("#inputBrennofen9").text(values[13]);
+        d3.select("#inputBrennofen10").text(values[14]);
+        d3.select("#inputBrennofen11").text(values[30]);
+        d3.select("#inputBrennofen12").text(values[31]);
+        d3.select("#inputBrennofen13").text(values[32]);
+        d3.select("#inputBrennofen14").text(values[33]);
+        d3.select("#inputBrennofen15").text(values[34]);
+        d3.select("#inputBrennofen16").text(values[35]);
+        d3.select("#inputBrennofen17").text(values[37]);
+        d3.select("#inputBrennofen18").text(values[38]);
+
+        d3.select("#inputSauggreifer1").text(values[14]);
+        d3.select("#inputSauggreifer2").text(values[25]);
+        d3.select("#inputSauggreifer3").text(values[16]);
+        d3.select("#inputSauggreifer4").text(values[17]);
+        d3.select("#inputSauggreifer5").text(values[18]);
+        d3.select("#inputSauggreifer6").text(values[39]);
+
+        d3.select("#inputSortier1").text(values[27]);
+        d3.select("#inputSortier2").text(values[28]);
+        d3.select("#inputSortier3").text(values[29]);
+        d3.select("#inputSortier4").text(values[2]);
+        d3.select("#inputSortier5").text(values[3]);
+        d3.select("#inputSortier6").text(values[4]);
     }
 }
 

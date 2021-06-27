@@ -2,6 +2,7 @@ body {
     background-color: #717e87;
     font-family: 'Roboto';    
     margin: 0;
+    width: 100% !important;
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
 
 .sidenav {
 	padding-top: 2%;
-	height: 100vh;
+	height: 103vh;
     width: 20%;
     float: left;
     position: relative;
@@ -21,7 +22,7 @@ body {
 }
 
 .content {
-	height: 100vh;
+	height: 103vh;
 	width: calc(100% - 200px);
     float: right;
     position: relative;
@@ -67,33 +68,6 @@ div.column {
   	font-size: large;
   	padding: 2%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 div.columnDetail {
   margin-left: 5%;
