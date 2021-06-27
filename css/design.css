@@ -11,7 +11,7 @@ body {
 
 .sidenav {
 	padding-top: 2%;
-	height: 103vh;
+	height: 105vh;
     width: 20%;
     float: left;
     position: relative;
@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-	height: 103vh;
+	height: 105vh;
 	width: calc(100% - 200px);
     float: right;
     position: relative;

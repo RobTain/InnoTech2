@@ -57,7 +57,9 @@ function zeigeDaten(daten, parameter) {
         d3.select("#value7").text(values[32]);
         d3.select("#value8").text(values[0].replace("{",""));
         d3.select("#value9").text(values[1]);
+        document.getElementById("picture").src="pictures/Beispiel2.png";
         break;
+
         case "Brennofen":
         d3.select("#value1").text(values[5]);
         d3.select("#value2").text(values[6]);
@@ -77,7 +79,9 @@ function zeigeDaten(daten, parameter) {
         d3.select("#value16").text(values[35]);
         d3.select("#value17").text(values[37]);
         d3.select("#value18").text(values[38]);
+        document.getElementById("picture").src="pictures/Beispiel2.png";
         break;
+
         case "Sortierstrecke":
         d3.select("#value1").text(values[14]);
         d3.select("#value2").text(values[25]);
@@ -85,7 +89,10 @@ function zeigeDaten(daten, parameter) {
         d3.select("#value4").text(values[17]);
         d3.select("#value5").text(values[18]);
         d3.select("#value6").text(values[39]);
+        document.getElementById("picture").src="pictures/Beispiel2.png";
         break;
+
+
         case "Sauggreifer":
         d3.select("#value1").text(values[27]);
         d3.select("#value2").text(values[28]);
@@ -93,7 +100,9 @@ function zeigeDaten(daten, parameter) {
         d3.select("#value4").text(values[2]);
         d3.select("#value5").text(values[3]);
         d3.select("#value6").text(values[4]);
+        document.getElementById("picture").src="pictures/Beispiel2.png";
         break;
+
         case"all":
         d3.select("#inputHochregal1").text(values[21]);
         d3.select("#inputHochregal2").text(values[22]);
@@ -104,6 +113,7 @@ function zeigeDaten(daten, parameter) {
         d3.select("#inputHochregal7").text(values[32]);
         d3.select("#inputHochregal8").text(values[0].replace("{",""));
         d3.select("#inputHochregal9").text(values[1]);
+        document.getElementById("pictureHochregal").src="pictures/Beispiel.png";
 
         d3.select("#inputBrennofen1").text(values[5]);
         d3.select("#inputBrennofen2").text(values[6]);
@@ -123,6 +133,7 @@ function zeigeDaten(daten, parameter) {
         d3.select("#inputBrennofen16").text(values[35]);
         d3.select("#inputBrennofen17").text(values[37]);
         d3.select("#inputBrennofen18").text(values[38]);
+        document.getElementById("pictureBrennofen").src="pictures/Beispiel2.png";
 
         d3.select("#inputSauggreifer1").text(values[14]);
         d3.select("#inputSauggreifer2").text(values[25]);
@@ -130,6 +141,7 @@ function zeigeDaten(daten, parameter) {
         d3.select("#inputSauggreifer4").text(values[17]);
         d3.select("#inputSauggreifer5").text(values[18]);
         d3.select("#inputSauggreifer6").text(values[39]);
+        document.getElementById("pictureSauggreifer").src="pictures/Beispiel.png";
 
         d3.select("#inputSortier1").text(values[27]);
         d3.select("#inputSortier2").text(values[28]);
@@ -137,6 +149,7 @@ function zeigeDaten(daten, parameter) {
         d3.select("#inputSortier4").text(values[2]);
         d3.select("#inputSortier5").text(values[3]);
         d3.select("#inputSortier6").text(values[4]);
+        document.getElementById("pictureSortier").src="pictures/Beispiel2.png";
     }
 }
 
