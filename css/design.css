@@ -120,3 +120,11 @@ div.columnDetail {
   color: white;
 }
 
+
+#colorError {
+  color: #d24525;
+}
+
+.fa-exclamation-triangle {
+    color: #d24525;
+}

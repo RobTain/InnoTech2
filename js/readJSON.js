@@ -162,6 +162,16 @@ function empfangeDaten(datenEmpfangen,error) {
 	// parameter time adden und auswerten 
     let parameter = urlParams.get('parameter').replace("?parameter=", "");
 
+    // first error: 65
+    // second one: 235
+
+    
+    // true
+    if(urlParams.has('errorValue') == true) { //true) {
+        // "100"
+        console.log(urlParams.get('errorValue'))
+    }
+
     if (error) {
         console.log(error);
     } else {
