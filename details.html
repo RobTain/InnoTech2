@@ -17,7 +17,7 @@
     <body onload="aktualisiere()">
     <div class="container">
     	<div class="sidenav">
-    		<nav>
+     		<nav>
     			<div id="HeaderNav">Systemstatus:</div>
     			<center><div id="trafficLight"></div></center>
     			<ul class="fa-ul">
@@ -33,11 +33,11 @@
 				</ul>
 				<br/>
 				<center>
+					<ul class="fa-ul">
 				<!-- TODO find komponente with error und referenziere direkt drauf -->
-									<ul class="fa-ul">
-				<!-- TODO find komponente with error und referenziere direkt drauf -->
-				<li style="color:#717e87;"><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all"  id="colorError">Fehler 1</a></li>
-				<li style="color:#717e87;"><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all"  id="colorError">Fehler 2</a></li>
+				<li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all&errorValue=1" id="colorError">Fehler 1</a></li>
+				<li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all&errorValue=2" id="colorError">Fehler 2</a></li>
+				<li><span class="fa-li"><i class="fa fa-check-circle"></i></span><a href="index.html?parameter=all&errorValue=0" id="colorOK">Normalbetrieb</a></li>
 			</ul>
 			</center>
 			</nav>

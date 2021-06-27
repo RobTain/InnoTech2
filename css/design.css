@@ -121,9 +121,18 @@ div.columnDetail {
 }
 
 
+#colorOK {
+  color: #217446;
+}
+
+.fa-check-circle {
+   color: #217446;
+}
+
 #colorError {
   color: #d24525;
 }
+
 
 .fa-exclamation-triangle {
     color: #d24525;

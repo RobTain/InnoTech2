@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/design.css" media="screen" />
        	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     </head>
 
     <body onload="aktualisiere()">
@@ -34,8 +35,9 @@
 				<center>
 					<ul class="fa-ul">
 				<!-- TODO find komponente with error und referenziere direkt drauf -->
-				<li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all"  id="colorError">Fehler 1</a></li>
-				<li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all"  id="colorError">Fehler 2</a></li>
+				<li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all&errorValue=1"  id="colorError">Fehler 1</a></li>
+				<li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span><a href="index.html?parameter=all&errorValue=2"  id="colorError">Fehler 2</a></li>
+				<li><span class="fa-li"><i class="fa fa-check-circle"></i></span><a href="index.html?parameter=all&errorValue=0"  id="colorOK">Normalbetrieb</a></li>
 			</ul>
 			</center>
 			</nav>
@@ -51,7 +53,7 @@
 				<div class="column">
 					<div id="headerColumn">Hochregallager</div>
 						<br/><br/>
-						<img id="pictureHochregal" alt="Foto Hochregallager" style="width: 90%;" class="centerPicture">
+						<img id="pictureHochregal" style="width: 90%;" class="centerPicture">
 							</br>
 							<div id="inputHochregal1"></div>
                 			<div id="inputHochregal2"></div>

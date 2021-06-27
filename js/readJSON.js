@@ -1,3 +1,4 @@
+let valueArray = 0;
 
 function zeigeDaten(daten, parameter) {
 
@@ -11,7 +12,8 @@ function zeigeDaten(daten, parameter) {
 
     // erstes JSON selektieren
 	// parameter auswerten
-    var firstEntry = daten[0];
+
+    var firstEntry = daten[valueArray];
 
     // als JSON nochmal reinladen
     const json = JSON.stringify(JSON.stringify(firstEntry.werte, null, ""));
@@ -37,11 +39,11 @@ function zeigeDaten(daten, parameter) {
     // Setzen der Farbe
     let colour = document.querySelector("#trafficLight");
     if (colourRed == "true") {
-        colour.style.backgroundColor = "Red";
+        colour.style.backgroundColor = "#d24525";
     } else if (colourOrange == "true") {
         colour.style.backgroundColor = "Yellow";
     } else if (colourGreen == "true") {
-        colour.style.backgroundColor = "Green";
+        colour.style.backgroundColor = "#217446";
     } else {
         colour.style.backgroundColor = "White";
     }
@@ -159,17 +161,20 @@ function empfangeDaten(datenEmpfangen,error) {
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-	// parameter time adden und auswerten 
+
+    let errorValue = -1;
+    if (queryString.match("errorValue=")) {
+         errorValue = urlParams.get('errorValue').replace("&errorValue=", "");
+    }
+
     let parameter = urlParams.get('parameter').replace("?parameter=", "");
 
-    // first error: 65
-    // second one: 235
-
-    
-    // true
-    if(urlParams.has('errorValue') == true) { //true) {
-        // "100"
-        console.log(urlParams.get('errorValue'))
+    if(errorValue == 1) {
+        valueArray = 66;
+    } else if (errorValue == 2) {
+        valueArray = 236;
+    } else if (errorValue == 0) {
+        valueArray = 40;
     }
 
     if (error) {
@@ -180,6 +185,7 @@ function empfangeDaten(datenEmpfangen,error) {
 }
 
 function aktualisiere() {
+
     /*
      Leider muss ich an dieser Stelle erwähnen, dass mein Informatik Partner zwar namentlich an
      diesem Projekt beteiligt war, jedoch zu keiner Zeit praktisch. Ich liebe Gruppenarbeiten.
