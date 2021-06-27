@@ -58,16 +58,42 @@ a {
 
 div.column {
 	margin-left: 5%;
-	margin-top: 2%;
+	margin-top: 5%;
   	background-color: #314151;
-  	width: 20%;
-  	height: 85%;
+  	width: 98%;
   	color: white;
   	overflow: hidden;
   	font-family: 'Roboto';
   	font-size: large;
   	padding: 2%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 div.columnDetail {
   margin-left: 5%;
@@ -84,6 +110,9 @@ div.columnDetail {
 
 .box { float: left; width: 47%; margin-right: 2%; box-sizing: border-box; }
 .box:last-child { margin-right: 0; }
+
+.box2 { float: left; width: 24%; box-sizing: border-box; }
+.box2:last-child { margin-right: 0; }
 
 .centerPicture {
   display: block;
