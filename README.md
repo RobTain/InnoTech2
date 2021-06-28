@@ -8,8 +8,9 @@ zunächst möchten wir uns bei Ihnen für die Übernahme des Auftrags zur Erstel
 - Anzeige der exakten Positionen der beweglichen Anlagenkomponenten
 - Submodulindividuelle Visualisierung der exakten Position unter Berücksichtigung aller beweglicher Achsen bzw. Richtungen (Bilder der Anlagenmodule samt Achsenbeschriftung werden von uns zur Verfügung gestellt)
 - Anzeige von Stati der Taster, Lichtschranken, Zählwerte der schnellen Zähler etc.
-Nach Modulen und Submodulen geordnete Darstellung in übersichtlicher Form
-Gewährleistung der Unterscheidbarkeit unterschiedlicher Sensoren und Aktoren
-Zusammenführung der Positionen und Stati in einer schematischen Übersicht, die eine direkte Lokalisierung erlaubt
-Geeignete Visualisierung, die auf Statiänderungen aufmerksam macht
-Wichtig: das Programm muss web-basiert funktionieren, also in einem Browser abrufbar sein!
+- Nach Modulen und Submodulen geordnete Darstellung in übersichtlicher Form
+- Gewährleistung der Unterscheidbarkeit unterschiedlicher Sensoren und Aktoren
+- Zusammenführung der Positionen und Stati in einer schematischen Übersicht, die eine direkte Lokalisierung erlaubt
+- Geeignete Visualisierung, die auf Statiänderungen aufmerksam macht
+
+*Wichtig:* das Programm muss web-basiert funktionieren, also in einem Browser abrufbar sein!
