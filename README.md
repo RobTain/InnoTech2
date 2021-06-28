@@ -14,3 +14,6 @@ zunächst möchten wir uns bei Ihnen für die Übernahme des Auftrags zur Erstel
 - Geeignete Visualisierung, die auf Statiänderungen aufmerksam macht
 
 **Wichtig:** das Programm muss web-basiert funktionieren, also in einem Browser abrufbar sein!
+
+## Inbetriebnahme
+Einfach Index Seite aufrufen und anschließend einen Wert in der Navigation selektieren
