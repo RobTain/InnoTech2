@@ -13,4 +13,4 @@ zunächst möchten wir uns bei Ihnen für die Übernahme des Auftrags zur Erstel
 - Zusammenführung der Positionen und Stati in einer schematischen Übersicht, die eine direkte Lokalisierung erlaubt
 - Geeignete Visualisierung, die auf Statiänderungen aufmerksam macht
 
-*Wichtig:* das Programm muss web-basiert funktionieren, also in einem Browser abrufbar sein!
+**Wichtig:** das Programm muss web-basiert funktionieren, also in einem Browser abrufbar sein!
