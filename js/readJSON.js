@@ -186,6 +186,15 @@ function empfangeDaten(datenEmpfangen,error) {
 
 function aktualisiere() {
 
+    // fix open file with http parameter 
+	const queryString = window.location.search;
+    if (queryString == "") {
+        var url = window.location.href;    
+        url += '?parameter=all'
+        window.location.href = url;
+    }
+
+    
     /*
      Leider muss ich an dieser Stelle erwähnen, dass mein Informatik Partner zwar namentlich an
      diesem Projekt beteiligt war, jedoch zu keiner Zeit praktisch. Ich liebe Gruppenarbeiten.
